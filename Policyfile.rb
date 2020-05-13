@@ -10,7 +10,8 @@ name 'debug_attributes'
 default_source :supermarket
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list 'debug_attributes::default'
+run_list 'debug_attributes_test::default'
 
 # Specify a custom source for a single cookbook:
 cookbook 'debug_attributes', path: '.'
+cookbook 'debug_attributes_test', path: './test/cookbooks/debug_attributes_test'
